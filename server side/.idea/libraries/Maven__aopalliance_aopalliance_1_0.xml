@@ -3,6 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/" />
       <root url="jar://$USER_HOME$/aws-java-sdk/1.10.30/lib/aws-java-sdk-1.10.30.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../mongodb jar/mongo-java-driver-3.1.0.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/aopalliance/aopalliance/1.0/aopalliance-1.0-javadoc.jar!/" />

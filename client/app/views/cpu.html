@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">CPU Charts</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div ng-controller="CPUCtrl" >
+    <div class="row">
+        <div class="col-lg-6 col-sm-12" id="line-chart" >
+            <p>
+                <label>Select date from </label>
+                <input type="text" id="date1" ng-model="startdata" ng-init="timeinterval=3600"/>
+                <label>to</label>
+                <input type="text" id="date2" ng-model="enddata"/>
+                <!--p> {{startdata | date : 'yyyy-mm-dd'}} </p>
+                <p> {{enddata | date}} </p-->
+            </p>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="line-chart" >
+            <p>
+                <label for="singleSelect"> Select time interval: </label>
+                <select name="singleSelect" ng-model="timeinterval">
+                    <option value="300">5 min</option>
+                    <option value="3600">1 hour</option>
+                    <option value="1800">0.5 hour</option>
+                </select>
+                <button ng-click="query()">Query</button>
+            </p>
+            
+        </div>
+    </div>
+    <!-- <label ng-model="p">{{p}}</label> -->
+    <div class="row">
+        <div class="col-lg-6 col-sm-12" id="line-chart" >
+            <div class="panel panel-default">
+                <div class="panel-heading">InstanceId(i-bcf2cc7c) CPU Chart</div>
+                <div class="panel-body">
+                    <canvas id="line1" class="chart chart-line chart-xl" data="line1.data" labels="line1.labels" legend="true" 
+                    click="line2.onClick" series="line1.series"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="line-chart" >
+            <div class="panel panel-default">
+                <div class="panel-heading">InstanceId(i-c18dc573) CPU Chart</div>
+                <div class="panel-body">
+                    <canvas id="line2" class="chart chart-line chart-xl" data="line2.data" labels="line2.labels" legend="true"
+                    click="line2.onClick" series="line2.series"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12" id="line-chart" >
+            <div class="panel panel-default">
+                <div class="panel-heading">InstanceId(i-2984cc9b) CPU Chart</div>
+                <div class="panel-body">
+                    <canvas id="line3" class="chart chart-line chart-xl" data="line3.data" labels="line3.labels" legend="true"
+                    click="line3.onClick" series="line3.series"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12" id="line-chart">
+            <div class="panel panel-default">
+                <div class="panel-heading">InstanceId(i-2c86ce9e) CPU Chart</div>
+                <div class="panel-body">
+                    <canvas id="line4" class="chart chart-line chart-xl" data="line4.data" labels="line4.labels" legend="true"
+                    click="line4.onClick" series="line4.series"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

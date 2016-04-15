@@ -61,8 +61,8 @@ public class TestController {
     @RequestMapping(value = "/query/{queryStr}", method = RequestMethod.GET)
     public ResponseEntity getData(@PathVariable("queryStr") String queryStr) {
         isHttp = false;
-        PersonalInformation firstKeySet = new PersonalInformation("AKIAJBVDUKERMGFF5CTA", "fzkX6xFBvnVh+385YXOilnYMeHECycOaz4J+7n90");
-        PersonalInformation secondKeySet = new PersonalInformation("AKIAJXULY4EXX2JJTT4Q", "dNPHm9iS2Wp2nEmXZmWXksC/dr/IQRFqfXl6M/lw");
+        PersonalInformation firstKeySet = new PersonalInformation("XYZ", "ABC");
+        PersonalInformation secondKeySet = new PersonalInformation("XYZ", "ABC");
 
         String[] parameters = queryStr.split("&");
         // Split the query string
